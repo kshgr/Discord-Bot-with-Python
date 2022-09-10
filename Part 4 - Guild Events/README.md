@@ -1,18 +1,20 @@
 # Part 3 - Ban Events
 
-This is the third episode of this series Creating a Discord Bot with Python using Hikari API. 
-In this [video](https://youtu.be/yFiHXrp5k9Q) we will be focusing on events triggered when a user's Ban status is modified and understand their Properties
+Hey Guys! This is the Fourth episode of this series Creating a Discord Bot with Python using Hikari API. In this [video](https://youtu.be/xQSvtAhxaGI) we will be focusing on events triggered with changes made to a server or when a bot joins/leaves a server and understand their Properties.
 
 
-[![Thumbnail](Thumbnail.png)](https://youtu.be/yFiHXrp5k9Q)
+[![Thumbnail](Thumbnail.png)](https://youtu.be/xQSvtAhxaGI)
 
 
-## Types of Ban Events
+## Types of Guild Events
 
 ```python
-hikari.BanEvent                 #Triggered for all Ban status change events
-hikari.BanCreateEvent           #Triggered when a user is banned from a server
-hikari.BanDeleteEvent           #Triggered when a user's ban is revoked from a server
+hikari.GuildJoinEvent                 #Triggered when Bot joins a server
+hikari.GuildLeaveEvent                #Triggered when Bot leaves a server
+hikari.GuildUnavailableEvent          #Triggered when a server becomes Unavailable
+hikari.GuildAvailableEvent            #Triggered when a server becomes Available
+hikari.GuildUpdateEvent               #Triggered when details of a server are updated
+hikari.EmojisUpdateEvent              #Triggered when emojis on a server are updated
 
 ```
 
