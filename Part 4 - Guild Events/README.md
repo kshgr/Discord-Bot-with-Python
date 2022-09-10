@@ -54,7 +54,7 @@ hikari.EmojisUpdateEvent              #Triggered when emojis on a server are upd
 ```python
     channels = event.channels           #Returns Mapping of channel IDs to channels in server
     emojis = event.emojis               #Returns Mapping of emoji IDs to emojis in server
-    guild = event.guild                 #Returns Name of server that bot has joined
+    guild = event.guild                 #Returns Name of server
     guild_id = event.guild_id           #Returns Unique Numeric GuildID
     members = event.members             #Returns Mapping of user IDs to Members in server
     presences = event.presences         #Returns Mapping of user IDs to presences in server
@@ -67,10 +67,9 @@ hikari.EmojisUpdateEvent              #Triggered when emojis on a server are upd
 ## GuildUpdateEvent Properties
 
 ```python
-    channels = event.channels           #Returns Mapping of channel IDs to channels in server
-    emojis = event.emojis               #Returns Mapping of emoji IDs to emojis in server
-    guild = event.guild                 #Returns Name of server that bot has joined
+    guild = event.guild                 #Returns New Name of server
     guild_id = event.guild_id           #Returns Unique Numeric GuildID
+    old_guild = event.guild             #Returns Previous Name of server
     members = event.members             #Returns Mapping of user IDs to Members in server
     presences = event.presences         #Returns Mapping of user IDs to presences in server
     roles = event.roles                 #Returns Mapping of role IDs to roles in server 
