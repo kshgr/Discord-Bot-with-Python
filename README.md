@@ -24,6 +24,12 @@
 
   * [Video](https://youtu.be/yFiHXrp5k9Q)
 
+* Part 4 (Guild Events)
+
+  * [Files](/Part%204%20-%20Guild%20Events)
+
+  * [Video](https://youtu.be/xQSvtAhxaGI)
+
 
 ## Resources
 
