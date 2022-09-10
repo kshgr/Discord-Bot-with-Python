@@ -70,21 +70,20 @@ hikari.EmojisUpdateEvent              #Triggered when emojis on a server are upd
     guild = event.guild                 #Returns New Name of server
     guild_id = event.guild_id           #Returns Unique Numeric GuildID
     old_guild = event.guild             #Returns Previous Name of server
-    members = event.members             #Returns Mapping of user IDs to Members in server
-    presences = event.presences         #Returns Mapping of user IDs to presences in server
     roles = event.roles                 #Returns Mapping of role IDs to roles in server 
     shard = event.shard                 #Returns Unique ShardID
-    voice_states = event.voice_states   #Returns Mapping of user IDs to voice states in server
+    emojis = event.emojis               #Returns Mapping of emoji IDs to emojis in server
 
 ```
 
-## BanDeleteEvent Properties
+## EmojisUpdateEvent Properties
 
 ```python
+    emojis = event.emojis               #Returns Mapping of updated emoji IDs to emojis in server
+    guild_id = event.guild_id           #Returns Unique Numeric GuildID
+    old_emojis = event.old_emojis       #Returns Mapping of previous emoji IDs to emojis in server
+    shard = event.shard                 #Returns Unique ShardID
     
-    guild_id = event.guild_id   #Returns Unique Numeric GuildID
-    shard = event.shard         #Returns Unique ShardID
-    user = event.user           #Returns Username#1234
 ```
 
 ## Resources
