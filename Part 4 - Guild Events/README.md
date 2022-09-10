@@ -22,7 +22,7 @@ hikari.EmojisUpdateEvent              #Triggered when emojis on a server are upd
 ## GuildJoinEvent Properties
 
 ```python
-    guild = event.guild
+    guild = event.guild                 #Returns Name of server that bot has joined
     guild_id = event.guild_id           #Returns Unique Numeric GuildID
     members = event.members             #Returns Mapping of user IDs to Members in server
     presences = event.presences         #Returns Mapping of user IDs to presences in server
@@ -30,6 +30,15 @@ hikari.EmojisUpdateEvent              #Triggered when emojis on a server are upd
     shard = event.shard                 #Returns Unique ShardID
     voice_states = event.voice_states   #Returns Mapping of user IDs to voice states in server
 
+```
+
+## GuildLeaveEvent Properties
+
+```python
+    guild_id = event.guild_id           #Returns Unique Numeric GuildID
+    old_guild = event.guild             #Returns Name of server that bot has left
+    shard = event.shard                 #Returns Unique ShardID
+    
 ```
 
 ## BanDeleteEvent Properties
