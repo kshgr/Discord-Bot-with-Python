@@ -24,6 +24,7 @@ GuildEvent
 
 @bot.listen(hikari.GuildJoinEvent)
 async def GuildJoinEvent(event):
+    #Event Triggered when Bot joins a server
     guild = event.guild
     guild_id = event.guild_id
     members = event.members
@@ -36,6 +37,7 @@ async def GuildJoinEvent(event):
 
 @bot.listen(hikari.GuildLeaveEvent)
 async def GuildLeaveEvent(event):
+    #Event Triggered when Bot leaves a server
     guild_id = event.guild_id
     old_guild = event.old_guild
     shard = event.shard
@@ -44,6 +46,7 @@ async def GuildLeaveEvent(event):
 
 @bot.listen(hikari.GuildUnavailableEvent)
 async def GuildUnavailableEvent(event):
+    #Event Triggered when a server becomes Unavailable
     guild_id = event.guild_id
     shard = event.shard
 
@@ -51,6 +54,7 @@ async def GuildUnavailableEvent(event):
 
 @bot.listen(hikari.GuildAvailableEvent)
 async def GuildAvailableEvent(event):
+    #Event Triggered when a server becomes Available
     channels = event.channels
     emojis = event.emojis
     guild = event.guild
@@ -65,6 +69,7 @@ async def GuildAvailableEvent(event):
 
 @bot.listen(hikari.GuildUpdateEvent)
 async def GuildUpdateEvent(event):
+    #Event Triggered when details of a server are updated
     guild = event.guild
     guild_id = event.guild_id
     old_guild = event.old_guild
@@ -76,6 +81,7 @@ async def GuildUpdateEvent(event):
 
 @bot.listen(hikari.EmojisUpdateEvent)
 async def EmojisUpdateEvent(event):
+    #Event Triggered when emojis on a server are updated
     emojis = event.emojis
     guild_id = event.guild_id
     old_emojis = event.old_emojis
@@ -83,5 +89,5 @@ async def EmojisUpdateEvent(event):
 
     print(emojis, guild_id, old_emojis, shard)
 
-    
+
 bot.run()
