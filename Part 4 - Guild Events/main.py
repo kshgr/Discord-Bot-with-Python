@@ -36,6 +36,7 @@ async def GuildJoinEvent(event):
     
     print(guild, guild_id, members, presences, roles, shard, voice_states)
 
+
 @bot.listen(hikari.GuildLeaveEvent)
 async def GuildLeaveEvent(event):
     #Event Triggered when Bot leaves a server
@@ -46,6 +47,7 @@ async def GuildLeaveEvent(event):
     
     print(guild_id, old_guild, shard)
 
+
 @bot.listen(hikari.GuildUnavailableEvent)
 async def GuildUnavailableEvent(event):
     #Event Triggered when a server becomes Unavailable
@@ -55,41 +57,47 @@ async def GuildUnavailableEvent(event):
     
     print(guild_id, shard)
 
+
 @bot.listen(hikari.GuildAvailableEvent)
 async def GuildAvailableEvent(event):
     #Event Triggered when a server becomes Available
-    channels = event.channels
-    emojis = event.emojis
-    guild = event.guild
-    guild_id = event.guild_id
-    members = event.members
-    presences = event.presences
-    roles = event.roles
-    shard = event.shard
-    voice_states = event.voice_states
+    
+    channels = event.channels           #Returns Mapping of channel IDs to channels in server
+    emojis = event.emojis               #Returns Mapping of emoji IDs to emojis in server
+    guild = event.guild                 #Returns Name of server
+    guild_id = event.guild_id           #Returns Unique Numeric GuildID
+    members = event.members             #Returns Mapping of user IDs to Members in server
+    presences = event.presences         #Returns Mapping of user IDs to presences in server
+    roles = event.roles                 #Returns Mapping of role IDs to roles in server 
+    shard = event.shard                 #Returns Unique ShardID
+    voice_states = event.voice_states   #Returns Mapping of user IDs to voice states in server
 
     print(channels, emojis, guild, guild_id, shard, members, presences, roles, voice_states)
+
 
 @bot.listen(hikari.GuildUpdateEvent)
 async def GuildUpdateEvent(event):
     #Event Triggered when details of a server are updated
-    guild = event.guild
-    guild_id = event.guild_id
-    old_guild = event.old_guild
-    roles = event.roles
-    shard = event.shard
-    emojis = event.emojis
+    
+    guild = event.guild                 #Returns New Name of server
+    guild_id = event.guild_id           #Returns Unique Numeric GuildID
+    old_guild = event.guild             #Returns Previous Name of server
+    roles = event.roles                 #Returns Mapping of role IDs to roles in server 
+    shard = event.shard                 #Returns Unique ShardID
+    emojis = event.emojis               #Returns Mapping of emoji IDs to emojis in server
 
     print(guild, guild_id, old_guild, roles, shard, emojis)
+
 
 @bot.listen(hikari.EmojisUpdateEvent)
 async def EmojisUpdateEvent(event):
     #Event Triggered when emojis on a server are updated
-    emojis = event.emojis
-    guild_id = event.guild_id
-    old_emojis = event.old_emojis
-    shard = event.shard
-
+    
+    emojis = event.emojis               #Returns Mapping of updated emoji IDs to emojis in server
+    guild_id = event.guild_id           #Returns Unique Numeric GuildID
+    old_emojis = event.old_emojis       #Returns Mapping of previous emoji IDs to emojis in server
+    shard = event.shard                 #Returns Unique ShardID
+    
     print(emojis, guild_id, old_emojis, shard)
 
 
