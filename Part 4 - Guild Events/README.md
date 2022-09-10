@@ -19,13 +19,16 @@ hikari.EmojisUpdateEvent              #Triggered when emojis on a server are upd
 ```
 
 
-## BanCreateEvent Properties
+## GuildJoinEvent Properties
 
 ```python
-    guild_id = event.guild_id   #Returns Unique Numeric GuildID
-    shard = event.shard         #Returns Unique ShardID
-    user = event.user           #Returns Username#1234
-    user_id = event.user_id     #Returns Unique Numeric UserID
+    guild = event.guild
+    guild_id = event.guild_id           #Returns Unique Numeric GuildID
+    members = event.members             #Returns Mapping of user IDs to Members in server
+    presences = event.presences         #Returns Mapping of user IDs to presences in server
+    roles = event.roles                 #Returns Mapping of role IDs to roles in server 
+    shard = event.shard                 #Returns Unique ShardID
+    voice_states = event.voice_states   #Returns Mapping of user IDs to voice states in server
 
 ```
 
