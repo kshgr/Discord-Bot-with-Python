@@ -25,31 +25,34 @@ GuildEvent
 @bot.listen(hikari.GuildJoinEvent)
 async def GuildJoinEvent(event):
     #Event Triggered when Bot joins a server
-    guild = event.guild
-    guild_id = event.guild_id
-    members = event.members
-    presences = event.presences
-    roles = event.roles
-    shard = event.shard
-    voice_states = event.voice_states
+
+    guild = event.guild                 #Returns Name of server that bot has joined
+    guild_id = event.guild_id           #Returns Unique Numeric GuildID
+    members = event.members             #Returns Mapping of user IDs to Members in server
+    presences = event.presences         #Returns Mapping of user IDs to presences in server
+    roles = event.roles                 #Returns Mapping of role IDs to roles in server 
+    shard = event.shard                 #Returns Unique ShardID
+    voice_states = event.voice_states   #Returns Mapping of user IDs to voice states in server
     
     print(guild, guild_id, members, presences, roles, shard, voice_states)
 
 @bot.listen(hikari.GuildLeaveEvent)
 async def GuildLeaveEvent(event):
     #Event Triggered when Bot leaves a server
-    guild_id = event.guild_id
-    old_guild = event.old_guild
-    shard = event.shard
 
+    guild_id = event.guild_id           #Returns Unique Numeric GuildID
+    old_guild = event.guild             #Returns Name of server that bot has left
+    shard = event.shard                 #Returns Unique ShardID
+    
     print(guild_id, old_guild, shard)
 
 @bot.listen(hikari.GuildUnavailableEvent)
 async def GuildUnavailableEvent(event):
     #Event Triggered when a server becomes Unavailable
-    guild_id = event.guild_id
-    shard = event.shard
-
+    
+    guild_id = event.guild_id           #Returns Unique Numeric GuildID
+    shard = event.shard                 #Returns Unique ShardID
+    
     print(guild_id, shard)
 
 @bot.listen(hikari.GuildAvailableEvent)
