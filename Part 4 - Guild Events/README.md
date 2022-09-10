@@ -1,9 +1,9 @@
 # Part 3 - Ban Events
 
-Hey Guys! This is the Fourth episode of this series Creating a Discord Bot with Python using Hikari API. In this [video](https://youtu.be/xQSvtAhxaGI) we will be focusing on events triggered with changes made to a server or when a bot joins/leaves a server and understand their Properties.
+Hey Guys! This is the Fourth episode of this series Creating a Discord Bot with Python using Hikari API. In this [video](https://youtu.be/oxjFYHQpoEs) we will be focusing on events triggered with changes made to a server or when a bot joins/leaves a server and understand their Properties.
 
 
-[![Thumbnail](Thumbnail.png)](https://youtu.be/xQSvtAhxaGI)
+[![Thumbnail](Thumbnail.png)](https://youtu.be/oxjFYHQpoEs)
 
 
 ## Types of Guild Events

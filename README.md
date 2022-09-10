@@ -28,7 +28,7 @@
 
   * [Files](/Part%204%20-%20Guild%20Events)
 
-  * [Video](https://youtu.be/xQSvtAhxaGI)
+  * [Video](https://youtu.be/oxjFYHQpoEs)
 
 
 ## Resources
