@@ -1,4 +1,4 @@
-# Part 3 - Ban Events
+# Part 4 - Guild Events
 
 Hey Guys! This is the Fourth episode of this series Creating a Discord Bot with Python using Hikari API. In this [video](https://youtu.be/oxjFYHQpoEs) we will be focusing on events triggered with changes made to a server or when a bot joins/leaves a server and understand their Properties.
 
@@ -88,7 +88,7 @@ hikari.EmojisUpdateEvent              #Triggered when emojis on a server are upd
 
 ## Resources
 
-[Hikari Documentation for Ban Events](https://www.hikari-py.dev/hikari/events/guild_events.html#hikari.events.guild_events.BanEvent)
+[Hikari Documentation for Guild Events](https://www.hikari-py.dev/hikari/events/guild_events.html#hikari.events.guild_events)
 Read the docs for better understanding of the code.
 
 [Discord Developer](https://discord.com/developers/applications)
