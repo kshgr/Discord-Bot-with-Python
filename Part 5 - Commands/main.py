@@ -29,10 +29,16 @@ bot = lightbulb.BotApp( token=TOKEN,
 
 """
 
+# Register the command to the bot
 @bot.command
+# Use the command decorator to convert the function into a command
 @lightbulb.command("ping", "Returns the Latency for our Bot.")
+# Define the command type(s) that this command implements
 @lightbulb.implements(lightbulb.PrefixCommand, lightbulb.SlashCommand)
+# Define the command's callback. The callback should take a single argument which will be
+# an instance of a subclass of lightbulb.context.Context when passed in
 async def ping(ctx: lightbulb.Context):
+    # Send a message to the channel the command was used in
     await ctx.respond(f"Pong! Latency: {bot.heartbeat_latency*1000:.2f}ms")
 
 
