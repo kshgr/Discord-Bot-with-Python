@@ -4,6 +4,7 @@
 [![GitHub](https://img.shields.io/github/license/kshgr/Discord-Bot-with-Python-using-Hikari)](/LICENSE)
 ![](https://img.shields.io/badge/status-ongoing-green)
 ![GitHub Repo stars](https://img.shields.io/github/stars/kshgr/Discord-Bot-with-Python-using-Hikari?style=social)
+![GitHub last commit](https://img.shields.io/github/last-commit/kshgr/Discord-Bot-with-Python-using-Hikari)
 
  This is an educational series to create a discord chatbot using Hikari, a Discord API Wrapper for Python
  
