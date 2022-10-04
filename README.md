@@ -1,4 +1,9 @@
 # Discord ChatBot with Python using Hikari
+
+[![first-timers-only Friendly](https://img.shields.io/badge/first--timers--only-friendly-blue.svg)](https://www.firsttimersonly.com/)
+[![APM](https://img.shields.io/apm/l/M?style=plastic)](/LICENSE)
+![](https://img.shields.io/badge/status-ongoing-brightgreen)
+
  This is an educational series to create a discord chatbot using Hikari, a Discord API Wrapper for Python
  
  [![Series Thumbnail](Thumbnail.webp)](https://www.youtube.com/playlist?list=PLpaMRtmEhzZah45Ie4j1QIQ91IHQsiB21)
