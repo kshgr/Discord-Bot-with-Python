@@ -3,6 +3,7 @@
 [![first-timers-only Friendly](https://img.shields.io/badge/first--timers--only-friendly-blue.svg)](https://www.firsttimersonly.com/)
 [![GitHub](https://img.shields.io/github/license/kshgr/Discord-Bot-with-Python-using-Hikari)](/LICENSE)
 ![](https://img.shields.io/badge/status-ongoing-green)
+![GitHub Repo stars](https://img.shields.io/github/stars/kshgr/Discord-Bot-with-Python-using-Hikari?style=social)
 
  This is an educational series to create a discord chatbot using Hikari, a Discord API Wrapper for Python
  
