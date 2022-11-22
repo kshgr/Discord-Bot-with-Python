@@ -42,6 +42,10 @@
  * [Files](/Part%205%20-%20Commands)
  * [Video](https://www.youtube.com/watch?v=jlhZXFfS40s)
  
+* Part 6 (Logging Messages)
+ 
+ * [Files](/Part%206%20-%20Logging)
+ * [Video](https://www.youtube.com/watch?v=L4PaiXWLmo4)
  
 
 ## Resources
