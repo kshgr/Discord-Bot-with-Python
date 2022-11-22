@@ -37,6 +37,12 @@
 
   * [Video](https://youtu.be/oxjFYHQpoEs)
 
+* Part 5 (Commands)
+ 
+ * [Files](/Part%205%20-%20Commands)
+ * [Video](https://www.youtube.com/watch?v=jlhZXFfS40s)
+ 
+ 
 
 ## Resources
 
